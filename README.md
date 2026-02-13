@@ -1,11 +1,5 @@
-# Snare
+# README
 
-Welcome to the Snare repository!
+This is the README file for the repository.
 
-For support, please contact: andres.pineda@deeploy.co
-
-## Installation
-
-Instructions to install Snare.
-
-... (Remaining content of README.md) ...
+For further information, please contact: andres.pineda@deeploy.co
