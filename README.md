@@ -1,2 +1,11 @@
-# snare
-Extension for browsers to report and alert about fake and phishing websites
+# Snare
+
+Welcome to the Snare repository!
+
+For support, please contact: andres.pineda@deeploy.co
+
+## Installation
+
+Instructions to install Snare.
+
+... (Remaining content of README.md) ...
