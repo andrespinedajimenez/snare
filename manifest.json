@@ -1,1 +1,37 @@
-{\n  "manifest_version": 3,\n  "name": "Fraud Detection Extension",\n  "version": "1.0",\n  "description": "A Chrome extension for detecting fraudulent sites.",\n  "permissions": [\n    "activeTab",\n    "webRequest",\n    "webRequestBlocking",\n    "storage"\n  ],\n  "background": {\n    "service_worker": "background.js"\n  },\n  "action": {\n    "default_popup": "popup.html",\n    "default_icon": {\n      "16": "images/icon16.png",\n      "48": "images/icon48.png",\n      "128": "images/icon128.png"\n    }\n  },\n  "icons": {\n    "16": "images/icon16.png",\n    "48": "images/icon48.png",\n    "128": "images/icon128.png"\n  },\n  "content_scripts": [\n    {\n      "matches": ["<all_urls>"],\n      "js": ["content.js"]\n    }\n  ]\n}
+{
+  "manifest_version": 3,
+  "name": "Snare - Fraud Detection",
+  "version": "1.0",
+  "description": "Detects potential fraud by analyzing URL patterns and page content urgency.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
